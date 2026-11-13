@@ -21,7 +21,7 @@
 ---
 
 > [!TIP]
-> **🎯 Ce guide est fait pour toi si tu es :**
+> **🎯 Il est fait pour toi si tu es :**
 > * 🌱 **Débutant** et que tu veux monter ton premier PC sans crainte de casser un composant.
 > * 🔧 **Passionné de hardware** ou **futur builder** en quête d'une méthode claire, structurée et sans jargon inutile.
 
