@@ -1,13 +1,15 @@
+###### README.md >> markdown 
+
 <div align="center">
 
 # 🖥️⚡ Tout savoir sur le Montage d'un PC Gamer
-### 🎮 *Le Guide complet de A à Z — Conçu pour assembler ton PC en toute confiance*
+###### 🎮 *Le Guide complet de A à Z — Conçu pour assembler ton PC en toute confiance*
 
 <p>
-  <img src="https://img.shields.io/badge/Guide-De_A_%C3%A0_Z-8A2BE2?style=for-the-badge" alt="Guide de A à Z" />
-  <img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-00B4D8?style=for-the-badge" alt="Français" />
-  <img src="https://img.shields.io/badge/Public-D%C3%A9butants_%26_Passionn%C3%A9s-FF007F?style=for-the-badge" alt="Public" />
-  <img src="https://img.shields.io/badge/Format-Ebook_%2F_Open_Guide-00C853?style=for-the-badge" alt="Format" />
+  <img src="https://img.shields.io/badge/Guide-De_A_%C3%A0_Z-black?style=for-the-badge" alt="Guide de A à Z" />
+  <img src="https://img.shields.io/badge/Langue-Fran%C3%A7ais-black?style=for-the-badge" alt="Français" />
+  <img src="https://img.shields.io/badge/Public-D%C3%A9butants_%26_Passionn%C3%A9s-black?style=for-the-badge" alt="Public" />
+  <img src="https://img.shields.io/badge/Format-Ebook_%2F_Open_Guide-black?style=for-the-badge" alt="Format" />
 </p>
 
 *Apprends à choisir les bons composants, assembler ton propre ordinateur pas à pas, configurer le BIOS et installer Windows sans stress.*
