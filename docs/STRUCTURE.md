@@ -16,7 +16,8 @@ PCperso/
 ├── CHECKLIST.md                     
 ├── 
 ├── LICENSE                        
-├── .github/                          
+├── .github/
+│   ├── 01-comp                      
 │   └── ISSUE_TEMPLATE/
 │       └── demande-aide-config.yml  
 ├── assets/                          
