@@ -1,24 +1,18 @@
 # 🤝 Contribuer à PCperso
 
-Merci de vouloir améliorer **PCperso** ! Toute aide est la bienvenue, même pour corriger une simple faute d'orthographe.
+Merci de ton intérêt pour **PCperso** ! Ce guide a pour objectif de rester accessible, exact et à jour pour toute personne souhaitant assembler son premier ordinateur.
 
-## 💡 Comment contribuer ?
+## 💡 Comment aider ?
 
-- **Signaler une erreur ou proposer une idée** : Ouvre une *Issue* en expliquant clairement la page concernée et la modification souhaitée.
-- **Corriger ou enrichir le guide** : Propose directement une modification via une *Pull Request* (PR).
-- **Ajouter un schéma** : Tu peux proposer des visuels clairs et libres de droits dans le dossier `assets/`.
+1. **Corriger une coquille ou clarifier un passage** :
+   - Ouvre une *Pull Request* en expliquant brièvement la modification.
+   - Privilégie un vocabulaire simple : si un terme technique est utilisé, assure-toi qu'il figure dans [`guide/07-glossaire-hardware.md`](./guide/07-glossaire-hardware.md).
+2. **Signaler un matériel obsolète ou une nouvelle norme** :
+   - Ouvre une *Issue* (ex. : nouveaux sockets CPU, évolutions de connecteurs d'alimentation, changements de logiciels).
+3. **Proposer un schéma pour `assets/`** :
+   - Utilise de préférence des formats légers et nets (`.svg` ou `.png` compressés), sans texte illisible sur mobile.
 
-## 📝 Règles d'écriture
-
-Ce guide s'adresse avant tout aux **débutants** :
-- Garde des phrases courtes, claires et sans jargon inutile.
-- Va à l'essentiel (listes à puces, étapes numérotées).
-- Vérifie que tes liens internes fonctionnent bien.
-
-## 🚀 Étapes pour proposer une modification
-
-1. Clique sur **Fork** en haut du dépôt (ou modifie directement le fichier via le crayon sur GitHub).
-2. Effectue tes changements sur une nouvelle branche.
-3. Ouvre une **Pull Request** avec un titre clair expliquant ce qui a été modifié.
-
-En participant à ce projet, tu t'engages à respecter le [Code de conduite](CODE_OF_CONDUCT.md).
+## ✅ Règles éditoriales
+- **Bienveillance & pédagogie** : Aucun jugement sur le budget ou le niveau technique du lecteur.
+- **Sécurité avant tout** : Toujours rappeler de couper l'alimentation avant toute manipulation interne.
+- **Liens propres** : Éviter les liens commerciaux affiliés ou les recommandations sponsorisées.
