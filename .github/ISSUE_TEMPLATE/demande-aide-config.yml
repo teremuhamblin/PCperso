@@ -1,0 +1,55 @@
+name: "🆘 Demande d'aide (Config ou Panne au montage)"
+description: "Utilise ce formulaire pour vérifier une config avant achat ou diagnostiquer un PC qui ne démarre pas."
+title: "[Aide] "
+labels: ["entraide", "diagnostic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de remplir un maximum d'informations ci-dessous pour recevoir une réponse rapide et précise !
+
+  - type: dropdown
+    id: type_demande
+    attributes:
+      label: "Quel est ton besoin ?"
+      options:
+        - "Vérifier la compatibilité d'une configuration avant achat"
+        - "Mon PC ne s'allume pas / écran noir après montage (No-POST)"
+        - "Problème de température, bruit ou réglage BIOS / Windows"
+    validations:
+      required: true
+
+  - type: textarea
+    id: composants
+    attributes:
+      label: "Liste des composants (références exactes)"
+      description: "Indique les modèles précis (notamment carte mère, CPU, RAM et alimentation)."
+      placeholder: |
+        - CPU :
+        - Refroidissement :
+        - Carte mère :
+        - RAM :
+        - GPU :
+        - SSD :
+        - Alimentation :
+        - Boîtier :
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptomes
+    attributes:
+      label: "Description du problème ou question"
+      description: "Si le PC ne démarre pas, indique quelles LEDs (CPU / DRAM / VGA / BOOT) s'allument sur la carte mère."
+      placeholder: "Les ventilateurs tournent mais l'écran reste noir et la LED DRAM reste allumée en orange..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: "Vérifications déjà effectuées (si panne)"
+      options:
+        - label: "J'ai vérifié que l'interrupteur de l'alimentation est sur I (On)"
+        - label: "L'écran est bien branché sur la carte graphique (et non sur la carte mère)"
+        - label: "J'ai consulté le chapitre 06-diagnostic-et-pannes.md"
