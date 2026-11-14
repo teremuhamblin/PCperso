@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#172033"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Halo lumineux à droite -->
+  <circle cx="1010" cy="150" r="130" fill="url(#glow)"/>
+
+  <!-- Badge -->
+  <rect x="80" y="64" width="180" height="28" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="170" y="83" text-anchor="middle" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#38BDF8">PROJET • PC GAMER</text>
+
+  <!-- Titre principal -->
+  <text x="80" y="162" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-1">
+    <tspan fill="#F8FAFC">PC</tspan><tspan fill="url(#accent)">perso</tspan>
+  </text>
+
+  <!-- Sous-titre -->
+  <text x="80" y="206" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#94A3B8">
+    Documentation, architecture &amp; guide d'assemblage PC Gamer
+  </text>
+
+  <!-- Barre d'accent -->
+  <rect x="80" y="232" width="110" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- Illustration minimaliste Boîtier PC -->
+  <g transform="translate(940, 55)">
+    <!-- Châssis -->
+    <rect x="0" y="0" width="140" height="190" rx="12" fill="#0F172A" stroke="url(#accent)" stroke-width="2.5"/>
+    <!-- Vitre latérale -->
+    <rect x="12" y="14" width="94" height="122" rx="6" fill="#1E293B" fill-opacity="0.55" stroke="#334155" stroke-width="1.5"/>
+    <!-- CPU / Ventirad -->
+    <rect x="24" y="28" width="40" height="40" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="44" cy="48" r="10" fill="none" stroke="#818CF8" stroke-width="2"/>
+    <!-- Carte graphique (GPU) -->
+    <rect x="20" y="86" width="76" height="18" rx="4" fill="url(#accent)"/>
+    <!-- Compartiment alimentation -->
+    <rect x="12" y="146" width="116" height="32" rx="5" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+    <!-- Ventilation façade -->
+    <line x1="118" y1="26" x2="118" y2="128" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 8"/>
+    <!-- Bouton Power -->
+    <circle cx="118" cy="162" r="4" fill="#38BDF8"/>
+  </g>
+</svg>
