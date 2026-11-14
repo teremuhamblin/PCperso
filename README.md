@@ -1,4 +1,11 @@
-###### README.md >> markdown 
+###### README.md >> markdown
+
+---
+
+![Bannière PCperso](assets/banner.svg)
+
+---
+
 # PCperso
 
 <div align="center">
