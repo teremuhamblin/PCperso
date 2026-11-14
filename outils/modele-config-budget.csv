@@ -1,0 +1,10 @@
+Categorie,Composant_Modele,Consommation_Estimee_W,Prix_Prevu_EUR,Prix_Paye_EUR,Compatibilite_Verifiee,Lien_Boutique
+Processeur (CPU),Exemple: Ryzen 5 7600,88,200,0,A verifier,
+Refroidissement,Exemple: Ventirad tour simple,5,35,0,A verifier,
+Carte mere,Exemple: B650 Micro-ATX,40,150,0,A verifier,
+Memoire vive (RAM),Exemple: 2x16 Go DDR5 6000 CL30,10,115,0,A verifier,
+Carte graphique (GPU),Exemple: RTX 4070 / RX 7800 XT,250,530,0,A verifier,
+Stockage (SSD NVMe),Exemple: SSD M.2 PCIe 4.0 1 To,8,75,0,A verifier,
+Boitier,Exemple: Boitier Airflow Mesh,15,85,0,A verifier,
+Alimentation (PSU),Exemple: 650W 80+ Gold Modulaire,0,95,0,A verifier,
+TOTAL_CONFIG,A calculer dans le tableur,=SUM(C2:C8),=SUM(D2:D9),=SUM(E2:E9),,
