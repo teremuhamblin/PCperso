@@ -3,6 +3,7 @@
 ![Bannière PCperso](assets/banner.svg)
 
 # PCperso
+- 》》 **v1.1** : *(mise à jour)*
 
 ### 🖥️⚡ *Tout savoir sur le Montage d'un PC Gamer*
 ### 🎮 *Le Guide complet de A à Z, conçu pour assembler ton PC en toute confiance*
