@@ -1,3 +1,8 @@
+<p align="right">
+
+![GitHub stars](https://img.shields.io/github/stars/teremuhamblin/PCperso?style=for-the-badge&color=success)
+</p>
+
 <div align="center">
 
 ![Bannière PCperso](assets/banner.svg)
