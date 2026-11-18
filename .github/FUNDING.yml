@@ -2,5 +2,4 @@
 # Garde toujours les guillemets autour d'une URL contenant "https://".
 
 custom:
-["teremuhamblin"]
 ["https://paypal.me/teremuhamblin"]
