@@ -14,6 +14,7 @@ Guide pratique, court et accessible pour choisir ses composants, monter son PC d
 5. [Windows, pilotes et tests de stabilité](guide/05-windows-pilotes-et-tests.md)
 6. [Diagnostic et pannes courantes](guide/06-diagnostic-et-pannes.md)
 7. [Glossaire et hardware](guide/07-glossaire-hardware.md)
+8. [Refroidissepent et entretient](guide/08-refroidissement-et-entretien.md)
 
 ---
 
