@@ -1,0 +1,53 @@
+name: "🐛 Signaler une erreur / un bug"
+description: "Signaler une erreur technique, un lien mort, une faute ou un bug dans le projet."
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler ce problème pour améliorer **PCperso** !
+
+  - type: dropdown
+    id: zone
+    attributes:
+      label: "Zone concernée"
+      description: "Quelle partie du projet est touchée ?"
+      options:
+        - "Guide de montage / Documentation"
+        - "Fiche composant"
+        - "Règle de compatibilité"
+        - "Configuration type (prix, TDP, pièces)"
+        - "Configurateur / Code (v2.0)"
+    validations:
+      required: true
+
+  - type: input
+    id: fichier
+    attributes:
+      label: "Fichier ou page concerné(e)"
+      description: "Indique le nom du fichier ou le lien si possible."
+      placeholder: "Ex : guides/assemblage-pc-gamer.md"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description du problème"
+      description: "Explique clairement ce qui est incorrect ou ce qui pose problème."
+      placeholder: "Ex : Le lien vers la section BIOS renvoie une erreur 404..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: "Correction ou comportement attendu"
+      description: "Qu'est-ce qui devrait apparaître ou se passer à la place ?"
+
+  - type: checkboxes
+    id: verifications
+    attributes:
+      label: "Vérifications"
+      options:
+        - label: "J'ai vérifié que ce problème n'a pas déjà été signalé dans les Issues."
+          required: true
