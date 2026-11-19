@@ -1,0 +1,27 @@
+name: "📚 Améliorer la documentation"
+description: "Proposer une clarification, une correction ou un ajout dans les guides et fiches."
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: input
+    id: fichier
+    attributes:
+      label: "Document concerné"
+      description: "Indique le guide ou fichier Markdown visé."
+      placeholder: "Ex : guides/assemblage-pc-gamer.md, README.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: probleme
+    attributes:
+      label: "Ce qui manque ou prête à confusion"
+      description: "Explique quel passage est incomplet ou difficile à comprendre pour un débutant."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Suggestion de reformulation ou d'ajout (optionnel)"
+      description: "Propose directement un texte ou un plan si tu le souhaites."
