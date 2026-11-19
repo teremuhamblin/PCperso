@@ -1,0 +1,62 @@
+name: "🧩 Composant & Règle de compatibilité"
+description: "Ajouter un composant, corriger un TDP/prix ou signaler une règle de compatibilité matérielle."
+title: "[Matériel] "
+labels: ["compatibilité", "data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Utilise ce formulaire pour enrichir ou corriger les données matérielles et règles de compatibilité de **PCperso**.
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: "Type de demande"
+      options:
+        - "Ajouter ou mettre à jour une fiche composant"
+        - "Ajouter ou corriger une règle de compatibilité"
+        - "Mettre à jour un prix ou une consommation (TDP)"
+        - "Signaler une contrainte physique (longueur GPU, hauteur ventirad, etc.)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: composant
+    attributes:
+      label: "Catégorie de composant"
+      multiple: true
+      options:
+        - "CPU (Processeur)"
+        - "GPU (Carte graphique)"
+        - "Carte mère"
+        - "RAM (DDR4 / DDR5)"
+        - "Stockage (SSD NVMe)"
+        - "Alimentation (PSU)"
+        - "Refroidissement (Ventirad / AIO)"
+        - "Boîtier"
+        - "Périphériques (Écran, clavier, souris)"
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: "Modèle ou plateforme concernée"
+      placeholder: "Ex : Socket AM5, RTX 5070, Alimentation ATX 3.1..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Détails techniques ou règle à appliquer"
+      description: "Précise les spécifications exactes (socket, dimensions en mm, TDP, norme, etc.)."
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: "Source officielle (recommandé)"
+      description: "Lien vers la fiche constructeur ou la documentation technique."
+      placeholder: "https://..."
