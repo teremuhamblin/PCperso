@@ -1,4 +1,5 @@
-# Documentation – PCperso
+# PCperso
+* **Documentations**
 
 Bienvenue dans le dossier de documentation du projet **PCperso**. Vous trouverez ici les fichiers de suivi du projet ainsi que les guides généraux sur l'assemblage d'un PC Gamer.
 
@@ -13,4 +14,4 @@ Bienvenue dans le dossier de documentation du projet **PCperso**. Vous trouverez
 - Voir **scripts/**
 
 ### Guides techniques
-* **[Assemblage PC Gamer](assemblage-pc-gamer.md)** : Documentation générale sur le choix des composants, la compatibilité et les étapes de montage d'un PC Gamer.
+* **[Assemblage PC Gamer](ASSEMBLAGE.md)** : Documentation générale sur le choix des composants, la compatibilité et les étapes de montage d'un PC Gamer.
