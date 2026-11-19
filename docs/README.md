@@ -11,7 +11,7 @@ Bienvenue dans le dossier de documentation du projet **PCperso**. Vous trouverez
 * **[Roadmap](ROADMAPmd)** : Feuille de route, objectifs et fonctionnalités à venir.
 * **[Changelog](CHANGELOG.md)** : Historique des mises à jour et des versions.
 * **[Tasks](TASKS.md)** : Feuille de route et application de la raodmap
-- Voir **scripts/**
+   - Voir **scripts/**
 
 ### Guides techniques
 * **[Assemblage PC Gamer](ASSEMBLAGE.md)** : Documentation générale sur le choix des composants, la compatibilité et les étapes de montage d'un PC Gamer.
