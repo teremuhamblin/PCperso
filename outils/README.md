@@ -1,8 +1,18 @@
-# 🛠️ Outils & Fiches Pratiques — PCperso (`v2.1 Candidate`)
+# 🛠️ Outils
+- Fiches Pratiques
+- PCperso (`v2.1 Candidate`)
 
 Ce dossier regroupe les **outils prêts à l'emploi**, **matrices de compatibilité 2026** et **fiches réflexes** pour accompagner les chapitres théoriques du dossier [`guide/`](../guide/). Chaque fichier est conçu pour être utilisé directement avant, pendant ou après l'assemblage — ou lors d'un upgrade.
-
----
+```text
+outils/
+├── README.md                          # [Mis à jour] Index v2.1 + parcours guidé
+├── calculateur-budget-puissance.md    # [Mis à jour] Calcul PSU ATX 3.1 & TDP 2026
+├── modele-config-budget.csv           # [Mis à jour] Tableur CSV complet (TDP, 12V-2x6, BTF, Budget)
+├── fiche-memo-cablage-et-debug.md     # [Mis à jour] Mémo 1 page (12V-2x6, Back-Connect, DDR5 Training)
+├── configs-types.md                   # [Nouveau / Intégré] Configs types 2026 (1080p / 1440p / 4K / SFF)
+├── verificateur-compatibilite-2026.md # [Nouveau] Matrice AM5/LGA1851, BTF/Stealth, DisplayPort 2.1
+└── guide-upgrade-pc.md                # [Nouveau] Méthode d'upgrade sans goulot d'étranglement
+```
 
 ## 📂 Contenu du dossier
 
