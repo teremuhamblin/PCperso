@@ -1,5 +1,6 @@
 ###### README.md >> markdown 
-# 🖥️ PCperso v1.0
+# 🖥️ PCperso
+* **v1.0**
 
 Guide pratique, court et accessible pour choisir ses composants, monter son PC de A à Z, le configurer et résoudre les pannes courantes.
 
