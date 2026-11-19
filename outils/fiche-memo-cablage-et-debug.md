@@ -1,35 +1,43 @@
-# 🔖 Fiche Mémo 1 Page — Câblage & Dépannage Express
+# 🔖 Fiche Mémo 1 
+- Page — Câblage
+- Debug Premier Démarrage (2026)
 
-Garde cette page ouverte sur ton téléphone ou imprime-la pendant l'assemblage pour éviter toute hésitation sur les câbles ou les voyants de démarrage.
+*À garder sous les yeux sur téléphone ou papier le jour du montage.*
 
 ---
 
-## 🔌 Ne plus jamais confondre les câbles d'alimentation
+## 🔌 1. Les câbles à ne JAMAIS confondre
 
-| Nom sur le câble / prise | Nombre de broches | Destination exacte | Piège à éviter |
+| Câble | Aspect & Détrompeur | Où le brancher ? | Piège fatal à éviter |
 | :--- | :--- | :--- | :--- |
-| **`ATX` / `MB`** | `24 pins` (ou `20+4`) | Bord droit de la carte mère | Très ferme à clipser : soutiens la carte mère par dessous. |
-| **`CPU` / `EPS`** | `8 pins` (`4+4` détachables) | Haut gauche de la carte mère | **Ne jamais forcer un câble PCIe GPU ici !** |
-| **`PCIe` / `VGA`** | `8 pins` (`6+2` détachables) | Carte graphique (GPU) | Utilise 2 câbles séparés depuis l'alim si le GPU a 2 prises. |
-| **`12VHPWR` / `12V-2x6`** | `16 pins` (12+4 petits) | Carte graphique récente | Enfoncer à 100 % sans aucun jour visible, pas de pliure serrée. |
-| **`SATA Power`** | Prise plate en "L" | Disques SATA / contrôleur RGB | Ne se branche jamais sur la carte mère, uniquement sur les périphériques. |
+| **ATX 24-pin** | Gros bloc 20+4 broches | Bord droit de la carte mère | Pousser jusqu'au clic du loquet (soutenir la carte par dessous). |
+| **CPU / EPS (`4+4`)** | 8 broches séparables en **4+4** | Haut gauche de la carte mère (`CPU_PWR`) | **Ne jamais forcer un câble PCIe 6+2 dedans !** |
+| **PCIe (`6+2`)** | 8 broches séparables en **6+2** | Carte graphique (GPU) | Utiliser des câbles séparés depuis la PSU (éviter le câble en Y sur gros GPU). |
+| **`12V-2x6` (ATX 3.1)** | Connecteur compact **12+4 broches** | GPU récents (RTX 5000 / certaines cartes) | **Enfoncer à 100 % sans aucun espace visible** + pas de pliure à < 3,5 cm. |
+| **`CPU_FAN` / `AIO_PUMP`** | Petite prise **4-pin PWM** | Haut de la carte mère près du CPU | Ne pas oublier `CPU_FAN` sinon le BIOS bloque le démarrage. |
+| **RGB (`ARGB 5V` vs `RGB 12V`)** | **3 broches** (5V) vs **4 broches** (12V) | En-têtes `JARGB` / `ADD_GEN2` | **Ne jamais brancher du 5V sur du 12V** → LED grillées instantanément. |
+
+> ⚠️ **Cartes mères Back-Connect (`ASUS BTF` / `MSI Project Zero` / `GIGABYTE Stealth`) :**  
+> Tous les connecteurs (`24-pin`, `EPS`, `SATA`, `F_PANEL`, ventilateurs) se branchent **au dos** de la carte mère. Vérifie que les découpes de ton boîtier correspondent **exactement** à la marque de ta carte mère avant de la visser !
 
 ---
 
-## 🚨 Que faire si ça ne démarre pas ? (Arbre express)
+## 🚦 2. Diagnostic Express : voyants **EZ Debug LED**
 
-```mermaid
-flowchart TD
-    Start["Appui sur Power"] --> Q1{"Les ventilateurs tournent ?"}
+Si le PC s'allume mais n'affiche rien à l'écran, regarde les 4 petites LED sur le bord droit de la carte mère :
 
-    Q1 -- "Non" --> A1["1. Alim sur I (On) ?<br/>2. Câble 24-pin clipsé à fond ?<br/>3. Broches POWER SW au bon endroit ?"]
-    Q1 -- "Oui mais écran noir" --> Q2{"Câble écran branché<br/>sur la CARTE GRAPHIQUE ?"}
+| LED allumée / fixe | Signification | Actions rapides (du plus fréquent au plus rare) |
+| :--- | :--- | :--- |
+| 🔴 **CPU** | Processeur non détecté ou mal alimenté | 1. Vérifier le câble **`4+4` EPS** en haut à gauche (et côté PSU).<br>2. Vérifier le branchement `CPU_FAN`.<br>3. Contrôler si le BIOS nécessite une mise à jour (*BIOS Flashback*). |
+| 🟡 **DRAM** | Mémoire vive non initialisée | 1. **En DDR5, attendre 1 à 3 minutes** au tout premier boot (*Memory Training*) !<br>2. Appuyer fort sur les barrettes dans les slots **A2 et B2** jusqu'au double clic.<br>3. Tester avec **une seule barrette** en A2. |
+| ⚪ **VGA** | Carte graphique non détectée | 1. **Brancher l'écran sur le GPU** (et non sur la carte mère !).<br>2. Ré-enfoncer le GPU à fond dans le port PCIe x16.<br>3. Vérifier l'insertion complète du câble **`12V-2x6`** ou des PCIe 8-pin. |
+| 🟢 **BOOT** | Aucun système d'exploitation trouvé | **C'est normal sur un PC neuf !** Branche ta clé USB d'installation Windows et redémarre (ou entre dans le BIOS avec `Suppr` / `F2`). |
 
-    Q2 -- "Non" --> FixVideo["Déplacer HDMI/DP vers le bas (sur le GPU)"]
-    Q2 -- "Oui" --> Q3{"Quelle LED 'EZ Debug'<br/>reste allumée ?"}
+---
 
-    Q3 -- "DRAM" --> FixRAM["Réinsérer la RAM (clic) ou tester 1 barrette en A2.<br/>Sur DDR5/AM5 : patienter 2-3 min au 1er boot."]
-    Q3 -- "CPU" --> FixCPU["Vérifier le câble CPU 4+4 en haut à gauche.<br/>Vérifier si BIOS Flashback nécessaire."]
-    Q3 -- "VGA" --> FixVGA["Réinsérer le GPU et vérifier ses câbles d'alim."]
-    Q3 -- "BOOT" --> FixBOOT["Tout est OK côté matériel !<br/>Insérer la clé USB d'installation Windows."]
-```
+## 🔄 3. Réinitialisation BIOS (Clear CMOS) si blocage après réglage RAM/XMP/EXPO
+
+1. **Éteins le PC** et bascule l'interrupteur de l'alimentation sur **`O` (OFF)** + débranche la prise secteur.
+2. Appuie 5 secondes sur le bouton Power du boîtier pour vider les condensateurs.
+3. Utilise le bouton **`Clear CMOS`** à l'arrière (si présent) **OU** touche simultanément les deux broches `JBAT1` / `CLRTC` pendant 10 secondes avec un tournevis (sinon retire la pile CR2032 pendant 5 minutes).
+4. Rebranche et redémarre : le BIOS revient aux réglages d'usine.
