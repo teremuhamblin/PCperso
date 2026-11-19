@@ -177,19 +177,19 @@ En complément des chapitres du guide, le dépôt inclut des **outils prêts à 
 ```mermaid
 flowchart TD
     S(["⚡ Appui sur Power"]) --> P{"Ventilateurs & LED<br/>s'allument ?"}
-    P -- Non --> P1["Vérifier interrupteur PSU (I/O)<br/>Câble 24-pin & prise F_PANEL"]
-    P -- Oui --> D{"Affichage à l'écran ?"}
-    D -- Oui --> OK(["✅ Accès BIOS → Activer XMP/EXPO"])
-    D -- Non --> D1{"Voyant EZ Debug LED ?"}
-    D1 -- "CPU / DRAM" --> D2["Contrôler câble CPU 8-pin<br/>Réinsérer RAM (slots A2/B2)"]
-    D1 -- "VGA / BOOT" --> D3["Brancher écran sur le GPU<br/>Vérifier PCIe / 12V-2x6 & SSD"]
+    P -->|Non| P1["Vérifier interrupteur PSU (I/O)<br/>Câble 24-pin & prise F_PANEL"]
+    P -->|Oui| D{"Affichage à l'écran ?"}
+    D -->|Oui| OK(["✅ Accès BIOS : activer XMP/EXPO"])
+    D -->|Non| D1{"Voyant EZ Debug LED ?"}
+    D1 -->|"CPU / DRAM"| D2["Contrôler câble CPU 8-pin<br/>Réinsérer RAM (slots A2/B2)"]
+    D1 -->|"VGA / BOOT"| D3["Brancher écran sur le GPU<br/>Vérifier PCIe / 12V-2x6 & SSD"]
 
-    classDef ok fill:#0f2e1d,stroke:#2ea043,stroke-width:2px,color:#e6edf3;
-    classDef warn fill:#2d1f0f,stroke:#d29922,stroke-width:2px,color:#e6edf3;
-    classDef base fill:#161b22,stroke:#58a6ff,stroke-width:1.5px,color:#f0f6fc;
-    class OK ok;
-    class P1,D2,D3 warn;
-    class S,P,D,D1 base;
+    classDef ok fill:#0f2e1d,stroke:#2ea043,stroke-width:2px,color:#e6edf3
+    classDef warn fill:#2d1f0f,stroke:#d29922,stroke-width:2px,color:#e6edf3
+    classDef base fill:#161b22,stroke:#58a6ff,stroke-width:2px,color:#f0f6fc
+    class OK ok
+    class P1,D2,D3 warn
+    class S,P,D,D1 base
 ```
 
 > 👉 En cas de blocage persistant, consulte le [**Chapitre 06 – Diagnostic & Dépannage**](./guide/06-diagnostic-et-pannes.md).
@@ -246,6 +246,7 @@ Ce projet est mis à disposition selon les termes de la licence [**Creative Comm
 
 ---
 
+<!--
 ## 2. Récapitulatif de toutes les améliorations effectuées (`v1.2 → v2.0 Stable`)
 
 ### 🎨 Style, mise en page & ergonomie tendance
@@ -270,3 +271,4 @@ Ce projet est mis à disposition selon les termes de la licence [**Creative Comm
 * **Intégration de tes nouveaux fichiers `.github/`** (`FUNDING.yml`, `ISSUE_TEMPLATE/`, `ROADMAP.md`) dans le tableau d'entraide.
 
 *(Pense simplement à vérifier si l'issue mentionnée précédemment s'appelle `demande-aide-config.yml` ou si tu utilises les templates `.github/ISSUE_TEMPLATE/` créés ensemble, et à mettre à jour ton `CHANGELOG.md` avec le passage en `v2.0 Stable`.)*
+-->
