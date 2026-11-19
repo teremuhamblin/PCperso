@@ -242,7 +242,6 @@ Ce projet est mis à disposition selon les termes de la licence [**Creative Comm
 <sub>Fait avec passion pour la communauté francophone • <b>PCperso v2.0 Stable</b> ⚡</sub>
 
 </div>
-```
 
 ---
 
