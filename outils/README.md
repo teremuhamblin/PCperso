@@ -1,6 +1,6 @@
-# 🛠️ Outils & Fiches Pratiques — PCperso
+# 🛠️ Outils & Fiches Pratiques — PCperso (`v2.1 Candidate`)
 
-Ce dossier regroupe les **outils prêts à l'emploi** et **fiches réflexes** pour accompagner les chapitres théoriques du dossier [`guide/`](../guide/). Chaque fichier est conçu pour être utilisé directement avant, pendant ou juste après l'assemblage de ton PC.
+Ce dossier regroupe les **outils prêts à l'emploi**, **matrices de compatibilité 2026** et **fiches réflexes** pour accompagner les chapitres théoriques du dossier [`guide/`](../guide/). Chaque fichier est conçu pour être utilisé directement avant, pendant ou après l'assemblage — ou lors d'un upgrade.
 
 ---
 
@@ -8,33 +8,37 @@ Ce dossier regroupe les **outils prêts à l'emploi** et **fiches réflexes** po
 
 | Fichier | Type | À utiliser quand ? | Description |
 | :--- | :---: | :--- | :--- |
-| [**`calculateur-budget-puissance.md`**](./calculateur-budget-puissance.md) | 🧮 Guide & Formule | **Avant l'achat** | Méthode simple pour calculer la puissance idéale de ton alimentation (TDP + marge de sécurité) et répartir ton budget. |
-| [**`modele-config-budget.csv`**](./modele-config-budget.csv) | 📊 Tableur | **Avant l'achat** | Tableau pré-rempli avec formules pour suivre tes composants, leurs consommations (W) et tes dépenses réelles. |
-| [**`fiche-memo-cablage-et-debug.md`**](./fiche-memo-cablage-et-debug.md) | 🔖 Fiche 1 page | **Pendant le montage & 1er boot** | Synthèse visuelle des câbles d'alimentation à ne pas confondre + arbre de diagnostic rapide (EZ Debug LEDs). |
+| [**`configs-types.md`**](./configs-types.md) | 🎯 Référentiel 2026 | **Avant sélection** | Configurations types équilibrées (`1080p`, `1440p`, `4K`, `Compact/BTF`) basées sur les gammes 2026. |
+| [**`verificateur-compatibilite-2026.md`**](./verificateur-compatibilite-2026.md) `v2.1` | 🧩 Matrice & Check | **Avant l'achat** | Vérification rapide chipsets (`B850`/`X870`/`B860`/`Z890`), RAM DDR5, boîtiers **Back-Connect** et écrans. |
+| [**`calculateur-budget-puissance.md`**](./calculateur-budget-puissance.md) | 🧮 Guide & Formule | **Avant l'achat** | Dimensionnement **ATX 3.1 / `12V-2x6`** (TDP + pics transitoires) et répartition optimale du budget. |
+| [**`modele-config-budget.csv`**](./modele-config-budget.csv) | 📊 Tableur CSV | **Avant l'achat** | Tableau pré-rempli avec formules pour suivre tes pièces, normes, watts (`W`) et dépenses réelles. |
+| [**`fiche-memo-cablage-et-debug.md`**](./fiche-memo-cablage-et-debug.md) | 🔖 Fiche 1 page | **Montage & 1er boot** | Synthèse des connecteurs (`CPU 4+4`, `PCIe 6+2`, `12V-2x6`, Back-Connect) + arbre *No-POST* / DDR5. |
+| [**`guide-upgrade-pc.md`**](./guide-upgrade-pc.md) `v2.1` | 🚀 Évolutivité | **PC déjà monté** | Diagnostic de goulot d'étranglement et plan d'upgrade sans incompatibilité cachée. |
 
 ---
 
 ## 🧭 Comment bien utiliser ces outils ?
 
 ### 1. En phase de préparation (Avant de commander)
-* Lis d'abord [`01-composants-compatibilite.md`](../guide/01-composants-compatibilite.md).
-* Ouvre [`calculateur-budget-puissance.md`](./calculateur-budget-puissance.md) pour dimensionner ton alimentation sans te tromper.
-* Télécharge [`modele-config-budget.csv`](./modele-config-budget.csv) et ouvre-le dans **Excel**, **LibreOffice Calc** ou **Google Sheets** :
-  * *Astuce d'import :* le séparateur utilisé est la **virgule (`,`)** afin que le tableau s'affiche aussi proprement directement sur GitHub.
+* Lis d'abord [`01-composants-compatibilite.md`](../guide/01-composants-compatibilite.md) puis choisis une base dans [`configs-types.md`](./configs-types.md).
+* Croise tes choix avec [`verificateur-compatibilite-2026.md`](./verificateur-compatibilite-2026.md) *(notamment si tu vises une carte mère BTF / Project Zero / Stealth ou du PCIe 5.0)*.
+* Dimensionne ton alimentation avec [`calculateur-budget-puissance.md`](./calculateur-budget-puissance.md) et suis ton panier dans [`modele-config-budget.csv`](./modele-config-budget.csv) :
+  * *Astuce d'import :* le séparateur utilisé est la **virgule (`,`)** pour un affichage natif sur GitHub et un import direct dans **Excel**, **LibreOffice Calc** ou **Google Sheets**.
 
 ### 2. Le jour du montage (Sur la table de travail)
 * Garde la [`CHECKLIST.md`](../CHECKLIST.md) sous les yeux pour suivre l'ordre exact des étapes.
-* Ouvre [`fiche-memo-cablage-et-debug.md`](./fiche-memo-cablage-et-debug.md) pour vérifier en un coup d'œil les connecteurs (`CPU 4+4` vs `PCIe 6+2`, `12V-2x6`, etc.) en complément du chapitre [`03-assemblage-et-cablage.md`](../guide/03-assemblage-et-cablage.md).
+* Ouvre [`fiche-memo-cablage-et-debug.md`](./fiche-memo-cablage-et-debug.md) pour vérifier en un coup d'œil les connecteurs (`CPU 4+4` vs `PCIe 6+2`, `12V-2x6`, câbles arrière Back-Connect) en complément du chapitre [`03-assemblage-et-cablage.md`](../guide/03-assemblage-et-cablage.md).
 
-### 3. Si le PC ne démarre pas du premier coup
-* Consulte l'arbre de diagnostic express dans [`fiche-memo-cablage-et-debug.md`](./fiche-memo-cablage-et-debug.md).
-* Si le problème persiste, passe au guide complet [`06-diagnostic-et-pannes.md`](../guide/06-diagnostic-et-pannes.md).
+### 3. Si le PC ne démarre pas ou pour un futur upgrade
+* Vérifie d'abord l'arbre de diagnostic express *(y compris le temps d'apprentissage mémoire DDR5)* dans [`fiche-memo-cablage-et-debug.md`](./fiche-memo-cablage-et-debug.md).
+* Si le problème persiste, consulte [`06-diagnostic-et-pannes.md`](../guide/06-diagnostic-et-pannes.md).
+* Pour faire évoluer une machine existante, suis la méthode de [`guide-upgrade-pc.md`](./guide-upgrade-pc.md).
 
 > [!TIP]
-> **Conseil pratique :** Avant de démonter ton ancien ordinateur ou de commencer l'assemblage, pense à **imprimer** la fiche mémo (ou à l'ouvrir sur ton téléphone) afin d'y avoir accès même si ton nouveau PC n'affiche pas encore d'image !
+> **Conseil pratique :** Avant de couper ton ancien PC ou d'ouvrir tes boîtes, garde la **fiche mémo** et la **checklist** ouvertes sur ton téléphone (ou imprimées) pour rester autonome même sans affichage !
 
 ---
 
 ## 🔗 Aller plus loin
 * [⬅️ Retour à l'accueil du projet (`README.md`)](../README.md)
-* [⚙️ Découvrir les scripts d'installation automatique post-montage (`scripts/`)](../scripts/README.md)
+* [⚙️ Scripts d'installation automatique post-montage (`scripts/`)](../scripts/README.md)
