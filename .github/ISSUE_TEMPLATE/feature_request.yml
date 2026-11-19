@@ -1,0 +1,44 @@
+name: "✨ Proposer une fonctionnalité ou évolution"
+description: "Suggérer une nouvelle idée, une configuration ou une amélioration pour PCperso."
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tu as une idée pour faire évoluer **PCperso** ? Décris-la ci-dessous.
+
+  - type: dropdown
+    id: categorie
+    attributes:
+      label: "Type d'évolution"
+      options:
+        - "Nouveau guide ou tutoriel"
+        - "Nouvelle configuration type"
+        - "Comparateur / Export (v1.5)"
+        - "Configurateur interactif / Suivi d'upgrade (v2.0)"
+        - "Autre amélioration"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description de la proposition"
+      description: "Décris de façon claire et concise ce que tu aimerais ajouter."
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectif
+    attributes:
+      label: "Pourquoi est-ce utile ?"
+      description: "Quel besoin cela résout-il pour un utilisateur qui monte ou améliore son PC ?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Pistes techniques ou exemples (optionnel)"
+      description: "Tu peux ajouter des exemples de structure, format JSON ou inspirations."
