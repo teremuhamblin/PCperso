@@ -1,10 +1,11 @@
-Categorie,Composant_Modele,Consommation_Estimee_W,Prix_Prevu_EUR,Prix_Paye_EUR,Compatibilite_Verifiee,Lien_Boutique
-Processeur (CPU),Exemple: Ryzen 5 7600,88,200,0,A verifier,
-Refroidissement,Exemple: Ventirad tour simple,5,35,0,A verifier,
-Carte mere,Exemple: B650 Micro-ATX,40,150,0,A verifier,
-Memoire vive (RAM),Exemple: 2x16 Go DDR5 6000 CL30,10,115,0,A verifier,
-Carte graphique (GPU),Exemple: RTX 4070 / RX 7800 XT,250,530,0,A verifier,
-Stockage (SSD NVMe),Exemple: SSD M.2 PCIe 4.0 1 To,8,75,0,A verifier,
-Boitier,Exemple: Boitier Airflow Mesh,15,85,0,A verifier,
-Alimentation (PSU),Exemple: 650W 80+ Gold Modulaire,0,95,0,A verifier,
-TOTAL_CONFIG,A calculer dans le tableur,=SUM(C2:C8),=SUM(D2:D9),=SUM(E2:E9),,
+Categorie,Composant choisi,Norme / Socket / Format,Conso estimée (W),Connecteur / Contrainte clé,Budget prévu (€),Prix réel (€),Statut
+CPU,Exemple : AMD Ryzen 7 9800X3D,AM5 / 8 cœurs,120,TDP 120W - Socket AM5,480,0,À choisir
+Carte mère,Exemple : MSI MAG B850 Tomahawk WiFi,AM5 / ATX / DDR5 / Wi-Fi 7,45,PCIe 5.0 M.2 - Standard ATX,220,0,À choisir
+GPU,Exemple : RTX 5070 Ti 16 Go ou RX 9070 XT,PCIe 5.0 / 16 Go VRAM,300,Câble 12V-2x6 - Longueur max mm,820,0,À choisir
+RAM,Exemple : 32 Go (2x16 Go) DDR5-6000 CL30,DDR5 Dual Channel (A2/B2),15,Profil EXPO / XMP,115,0,À choisir
+Stockage SSD 1,Exemple : SSD NVMe 2 To PCIe 4.0,M.2 2280 PCIe 4.0 x4,8,Dissipateur carte mère,130,0,À choisir
+Refroidissement,Exemple : Ventirad Double Tour 120mm,Hauteur max boîtier (mm),10,Hauteur ~155 mm - PWM,45,0,À choisir
+Alimentation (PSU),Exemple : 850W ATX 3.1 80+ Gold Modulaire,ATX 3.1 / PCIe 5.1,0,Câble 12V-2x6 natif (600W),130,0,À choisir
+Boîtier,Exemple : Moyen Tour Mesh (3x ventilos),ATX / Mesh / Back-Connect?,12,Longueur GPU max >= 340 mm,95,0,À choisir
+Écran / Périphériques,Optionnel : Écran 1440p 240Hz OLED/IPS,DisplayPort 2.1 / HDMI 2.1,0,Vérifier câble DP fourni,0,0,Optionnel
+TOTAL ESTIMÉ,---,Marge PSU x1.30 recommandée,=SUM(D2:D10),Puissance PSU mini = Total W x 1.3,=SUM(F2:F10),=SUM(G2:G10),0/9 validés
