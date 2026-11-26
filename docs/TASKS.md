@@ -1,28 +1,27 @@
-# PCperso — Suivi des tâches
+# PCperso — Suivi des tâches v2.2
 
-Suivi de la consolidation documentaire **v2.1 Candidate**. Les cases indiquent uniquement les ressources confirmées dans l’arborescence ou les validations encore à réaliser ; elles ne certifient pas la justesse technique d’un contenu.
+Ce suivi reflète les tâches de préparation à la v2.2 Stable. Les cases terminées décrivent des fichiers présents, pas une validation technique indépendante.
 
-## ✅ Ressources présentes
+## ✅ Dépôt et documentation disponibles
 
-- [x] Guide de huit chapitres dans `guide/`.
-- [x] Checklist de montage `CHECKLIST.md`.
-- [x] Index des guides, des outils et des scripts.
-- [x] Configurations types, outil de compatibilité, modèle budgétaire et guide d’upgrade.
-- [x] Script PowerShell `scripts/pack_logiciels_pc_neuf.ps1` et documentation associée.
-- [x] Modèles communautaires GitHub dans `.github/`.
-- [x] Documents de changelog, roadmap, structure et assemblage dans `docs/`.
-- [x] README principal harmonisé avec les chemins actuellement présents.
+- [x] README avec liens vers les ressources présentes et statut Candidate explicite.
+- [x] Index des guides, outils et scripts.
+- [x] Roadmap de stabilisation et critères de sortie.
+- [x] Modèles de contribution mis à jour avec vérifications documentaires et sécurité.
+- [x] Vérificateur automatique local des liens Markdown et workflow CI proposé.
+- [x] Modèles de note de release, issue et milestone préparés pour revue manuelle.
 
-## ⏳ Vérifications nécessaires avant de déclarer la version stable
+## ⏳ À effectuer avant d’annoncer la v2.2 Stable
 
-- [ ] Effectuer une revue technique des recommandations et chiffres matériels avec des sources datées.
-- [ ] Relire le script PowerShell, les sources et les paramètres ; confirmer la documentation à partir du code actuel.
-- [ ] Relire `setup_issue.sh` et `setup_pr_templates.sh` avant toute exécution avec `gh`.
-- [ ] Vérifier tous les liens relatifs du dépôt après la réorganisation documentaire.
-- [ ] Tester les diagrammes et le rendu Markdown sur GitHub.
-- [ ] Faire relire les avertissements de sécurité matérielle.
-- [ ] Mettre à jour la release et le changelog à partir des vérifications réellement terminées.
+- [ ] Revue technique sourcée des affirmations matérielles et compatibilités.
+- [ ] Ajouter les sources et dates de vérification aux recommandations conservées.
+- [ ] Auditer les scripts et mettre leur documentation en concordance avec le code exact.
+- [ ] Examiner les instructions de sécurité matérielle.
+- [ ] Lancer le workflow et corriger les liens locaux invalides signalés.
+- [ ] Vérifier manuellement les liens externes, ancres et rendus Mermaid.
+- [ ] Obtenir une relecture indépendante.
+- [ ] Compléter la note de publication avec les résultats effectifs.
 
-## Règle de clôture
+## Critère de clôture
 
-Ne coche pas les tâches de vérification sur la seule base de la présence d’un fichier. Note la méthode, les références et la date de revue lorsque les contrôles sont effectués.
+La version ne passe au statut stable qu’une fois les validations précédentes réellement exécutées, documentées et relues. Ne coche pas une validation simplement parce qu’un workflow ou un document existe.
