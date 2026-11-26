@@ -1,23 +1,21 @@
-# ⚙️ PCperso — Index des scripts
+# PCperso — Index des scripts
 
-Ce dossier contient des scripts d’aide à l’installation de logiciels sur Windows et des scripts de maintenance GitHub. **Lis chaque fichier et vérifie les commandes, les sources et le dépôt cible avant exécution.**
+Le dossier contient un script PowerShell d’installation de logiciels Windows ainsi que des scripts Bash de maintenance GitHub. Consulte les sources et paramètres avant utilisation.
 
-## Fichiers présents
-
-| Script | Usage déclaré | Précaution |
+| Fichier | Usage décrit | Contrôles avant exécution |
 |:--|:--|:--|
-| [`pack_logiciels_pc_neuf.ps1`](./pack_logiciels_pc_neuf.ps1) | Automatisation d’installation de logiciels sur Windows via WinGet. | Examine le code, la liste des paquets, les options et privilèges avant de lancer. Utilise le mode simulation lorsqu’il est disponible et vérifie son comportement dans le script. |
-| [`setup_issue.sh`](./setup_issue.sh) | Automatisation de configuration GitHub (issues, labels ou milestones selon le script). | Lis le script, contrôle le dépôt cible, l’état des ressources existantes et les autorisations `gh`. Toute écriture distante peut modifier le dépôt. |
-| [`setup_pr_templates.sh`](./setup_pr_templates.sh) | Automatisation de modèles de Pull Request. | Vérifie les chemins, la cible GitHub et les changements effectués avant lancement. |
+| [`pack_logiciels_pc_neuf.ps1`](./pack_logiciels_pc_neuf.ps1) | Automatisation d’installation via WinGet. | Lire le script, vérifier les identifiants de paquets et privilèges, utiliser le mode simulation s’il est disponible et vérifier les changements proposés. |
+| [`setup_issue.sh`](./setup_issue.sh) | Automatisation de ressources GitHub selon son code. | Vérifier le dépôt cible, les ressources existantes, les permissions du compte et les effets des appels `gh`. |
+| [`setup_pr_templates.sh`](./setup_pr_templates.sh) | Automatisation de modèles de Pull Request selon son code. | Vérifier les chemins de destination, le dépôt cible et les changements distants/localement écrits. |
 
-## Outils de développement
+## Principes de sécurité
 
-- **PowerShell et WinGet** sont requis pour le script Windows.
-- **Bash et GitHub CLI (`gh`)** peuvent être nécessaires aux scripts de maintenance GitHub.
-- N’utilise pas d’option d’exécution ou d’élévation globale uniquement pour contourner un avertissement.
-- Ne lance pas un script distant directement depuis une commande réseau sans l’avoir téléchargé, lu et vérifié.
+- Lis le script complet avant exécution ; ne te fie pas uniquement à cette description.
+- Vérifie toute source de téléchargement et chaque identifiant de paquet.
+- N’accorde que les privilèges nécessaires et évite les contournements globaux de sécurité.
+- Les scripts `gh` peuvent écrire dans un dépôt distant : confirme leur cible et inspecte l’état actuel avant de les lancer.
+- N’exécute jamais directement depuis le réseau un script que tu n’as pas téléchargé et examiné.
 
-> [!CAUTION]
-> Les scripts ont des effets potentiels sur le PC local ou le dépôt GitHub. La présence d’un fichier dans ce dépôt ne constitue pas un audit de sécurité ni une garantie de fonctionnement. Vérifie les sources des paquets et obtiens une sauvegarde adaptée avant toute opération importante.
+Les paramètres et les fonctions réellement disponibles sont ceux du code source du script, pas ceux d’un exemple de documentation.
 
 **Navigation :** [README principal](../README.md) · [Outils](../outils/README.md) · [Checklist](../CHECKLIST.md)
