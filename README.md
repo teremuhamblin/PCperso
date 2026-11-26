@@ -7,6 +7,29 @@
 </a>
 
 # ⚡ PCperso — v2.1 Candidate
+# PCperso — Index de la documentation
+
+Documentation du dépôt, organisée par thème.
+
+## Pilotage du projet
+
+- [Changelog](CHANGELOG.md) — changements documentés.
+- [Roadmap](ROADMAP.md) — stabilisation v2.2 et prochaines décisions.
+- [Tasks](TASKS.md) — contrôles à effectuer avant publication stable.
+- [Structure](STRUCTURE.md) — arborescence du dépôt.
+- [Index assemblage](ASSEMBLAGES.md) — parcours de montage par chapitre.
+- [Préparation de release v2.2](release-v2.2.0/README.md) — modèles à finaliser et publier manuellement.
+
+## Ressources
+
+- [Guide principal](../README.md)
+- [Chapitres de montage](../guide/README.md)
+- [Outils pratiques](../outils/README.md)
+- [Scripts](../scripts/README.md)
+- [Checklist](../CHECKLIST.md)
+
+> Les contenus techniques doivent être vérifiés auprès des fabricants avant achat ou intervention. Les scripts doivent être lus et compris avant exécution.
+
 
 ### Le guide francophone pour choisir, monter et configurer son PC Gamer
 
