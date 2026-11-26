@@ -1,30 +1,47 @@
 # PCperso — Feuille de route
 
-La feuille de route distingue les ressources déjà présentes dans le dépôt des validations ou évolutions encore à faire. Une case n’est cochée que lorsque le travail correspondant est vérifiable dans le dépôt.
+La roadmap sépare les ressources déjà présentes des tâches de revue à effectuer. La cible v2.2 Stable ne sera annoncée comme publiée qu’après validation des critères de sortie.
 
-## ✅ Base documentaire disponible
+## Socle documentaire présent
 
-- [x] Guide principal organisé en huit chapitres (`guide/01` à `guide/08`).
-- [x] Checklist de montage à la racine (`CHECKLIST.md`).
+- [x] Guide de huit chapitres dans `guide/`.
+- [x] Checklist de montage à la racine.
 - [x] Index d’outils, configurations types, fiche mémo et guide d’upgrade.
-- [x] Index de scripts et script PowerShell pour les logiciels de post-installation.
-- [x] Documentation de suivi dans `docs/` et ressources de contribution dans `.github/`.
-- [x] README v2.1 Candidate avec navigation et diagrammes Mermaid.
+- [x] Scripts et documentation d’utilisation.
+- [x] Modèles communautaires GitHub.
+- [x] Documents de suivi, journal et structure dans `docs/`.
 
-## 🔎 Cycle v2.1 Candidate — Qualité et cohérence
+## Cycle v2.2 — Traçabilité, sécurité et qualité
 
-- [ ] Relire les recommandations matérielles contre les documentations officielles des fabricants.
-- [ ] Examiner les scripts et confirmer que leur documentation reflète précisément leur comportement actuel.
-- [ ] Vérifier les liens internes du dépôt et corriger les références historiques restantes.
-- [ ] Revoir les instructions de sécurité et faire valider les conseils sensibles avant diffusion.
-- [ ] Tester le rendu du README et des diagrammes Mermaid sur GitHub desktop et mobile.
-- [ ] Mettre à jour les notes de version après revue effective des changements.
+### Revue technique et sources
 
-## 🚀 Prochaines pistes — à définir
+- [ ] Recenser les recommandations matérielles, chiffres et affirmations de compatibilité des guides et outils.
+- [ ] Vérifier chaque recommandation auprès des documentations fabricants ou sources officielles pertinentes.
+- [ ] Ajouter pour les données sensibles une source, une date de vérification et le modèle/révision applicable.
+- [ ] Marquer les prix, performances et répartitions budgétaires comme exemples datés, pas garanties.
+- [ ] Corriger ou retirer les affirmations non vérifiables ou obsolètes.
 
-Ces pistes ne sont pas des fonctionnalités déjà livrées. Elles nécessitent une proposition, une revue de faisabilité et des sources fiables avant d’être planifiées.
+### Scripts et sécurité
 
-- [ ] Définir un format de données maintenable pour les configurations types et leur date de vérification.
-- [ ] Ajouter des références fabricant versionnées aux tableaux de compatibilité.
-- [ ] Évaluer des contrôles automatisés de liens et de cohérence Markdown en CI.
-- [ ] Décider du périmètre et du statut de la future version stable après clôture de la Candidate.
+- [ ] Relire chaque script et comparer son comportement aux instructions publiées.
+- [ ] Documenter les sources de paquets, paramètres, privilèges, effets secondaires et possibilités d’annulation lorsqu’elles existent.
+- [ ] Contrôler particulièrement les scripts de gestion distante via GitHub CLI avant de recommander leur exécution.
+- [ ] Revoir les instructions de sécurité matérielle avec des sources de fabricants.
+
+### Qualité documentaire
+
+- [ ] Exécuter le vérificateur de liens locaux en CI sur les changements proposés.
+- [ ] Vérifier les liens externes et les références internes à la main lorsque le contrôle automatique ne suffit pas.
+- [ ] Contrôler le rendu du README, des images et des diagrammes Mermaid sur GitHub.
+- [ ] Harmoniser versions, noms de fichiers et index sans supprimer les anciens liens utiles.
+
+### Publication stable
+
+- [ ] Faire relire la documentation par une autre personne.
+- [ ] Consigner les validations réellement exécutées et leurs dates.
+- [ ] Mettre à jour changelog et note de release à partir des changements vérifiés.
+- [ ] Publier la v2.2 Stable uniquement après clôture des critères ci-dessus.
+
+## Évolutions hors périmètre à discuter
+
+Un configurateur interactif ou une base de composants avec prix en direct ne font pas partie de cette stabilisation documentaire. Ils nécessiteraient un périmètre, des sources de données et une maintenance distincts.
