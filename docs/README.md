@@ -1,17 +1,21 @@
-# PCperso
-* **Documentations**
+# PCperso — Index de la documentation
 
-Bienvenue dans le dossier de documentation du projet **PCperso**. Vous trouverez ici les fichiers de suivi du projet ainsi que les guides généraux sur l'assemblage d'un PC Gamer.
+Bienvenue dans la documentation du dépôt **PCperso**. Les fichiers ci-dessous sont rangés par usage ; les liens sont relatifs à ce dossier.
 
-## Contenu du dossier
+## Suivi du projet
 
-### Suivi et conception du projet
-* **[Structure](STRUCTURE.md)** : Organisation des dossiers et des fichiers du projet.
-* **[Architecture](ARCHITECTURE.md)** : Vue d'ensemble technique et fonctionnement global.
-* **[Roadmap](ROADMAPmd)** : Feuille de route, objectifs et fonctionnalités à venir.
-* **[Changelog](CHANGELOG.md)** : Historique des mises à jour et des versions.
-* **[Tasks](TASKS.md)** : Feuille de route et application de la raodmap
-   - Voir **scripts/**
+- [Changelog](CHANGELOG.md) — historique des versions documentées.
+- [Roadmap](ROADMAP.md) — vérifications et pistes de travail.
+- [Tasks](TASKS.md) — checklist de suivi.
+- [Structure](STRUCTURE.md) — arborescence indicative du dépôt.
+- [Index assemblage](ASSEMBLAGES.md) — parcours vers les chapitres de montage.
 
-### Guides techniques
-* **[Assemblage PC Gamer](ASSEMBLAGE.md)** : Documentation générale sur le choix des composants, la compatibilité et les étapes de montage d'un PC Gamer.
+## Autres ressources
+
+- [Guide principal](../README.md)
+- [Chapitres de montage](../guide/README.md)
+- [Outils pratiques](../outils/README.md)
+- [Scripts](../scripts/README.md)
+- [Checklist](../CHECKLIST.md)
+
+> Les informations de composants et les scripts doivent être vérifiés avant achat, branchement ou exécution. Consulte les sources officielles et le code correspondant.

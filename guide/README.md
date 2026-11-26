@@ -1,31 +1,16 @@
-###### README.md >> markdown 
-# 🖥️ PCperso
-* **v1.0**
+# Guide PCperso — index des chapitres
 
-Guide pratique, court et accessible pour choisir ses composants, monter son PC de A à Z, le configurer et résoudre les pannes courantes.
+Parcours pédagogique pour préparer, assembler, configurer et entretenir un PC. Lis les chapitres dans l’ordre pour un premier montage ou ouvre directement le thème qui t’intéresse.
 
----
+| # | Chapitre | Fichier |
+|:--:|:--|:--|
+| 01 | Composants et compatibilité | [Lire](./01-composants-compatibilite.md) |
+| 02 | Préparation et connecteurs | [Lire](./02-preparation-et-connecteurs.md) |
+| 03 | Assemblage et câblage | [Lire](./03-assemblage-et-cablage.md) |
+| 04 | BIOS/UEFI et XMP/EXPO | [Lire](./04-bios-uefi-et-xmp-expo.md) |
+| 05 | Windows, pilotes et tests | [Lire](./05-windows-pilotes-et-tests.md) |
+| 06 | Diagnostic et pannes | [Lire](./06-diagnostic-et-pannes.md) |
+| 07 | Glossaire matériel | [Lire](./07-glossaire-hardware.md) |
+| 08 | Refroidissement et entretien | [Lire](./08-refroidissement-et-entretien.md) |
 
-## 📚 Sommaire du guide
-
-1. [Composants et compatibilité](guide/01-composants-compatibilite.md)
-2. [Préparation et connecteurs](guide/02-preparation-et-connecteurs.md)
-3. [Assemblage et câblage](guide/03-assemblage-et-cablage.md)
-4. [BIOS/UEFI et profils XMP/EXPO](guide/04-bios-uefi-et-xmp-expo.md)
-5. [Windows, pilotes et tests de stabilité](guide/05-windows-pilotes-et-tests.md)
-6. [Diagnostic et pannes courantes](guide/06-diagnostic-et-pannes.md)
-7. [Glossaire et hardware](guide/07-glossaire-hardware.md)
-8. [Refroidissepent et entretient](guide/08-refroidissement-et-entretien.md)
-
----
-
-## 🛠️ Ressources utiles
-
-- ✅ **[CHECKLIST.md](CHECKLIST.md)** : Liste de vérification interactive à suivre le jour du montage.
-- 🖼️ **`assets/`** : Schémas et photos de référence des connecteurs.
-
----
-
-## 📄 Licence
-
-Ce projet est distribué sous licence [CC-BY-NC-SA](LICENSE).
+**Ressources :** [Retour au guide principal](../README.md) · [Checklist](../CHECKLIST.md) · [Outils](../outils/README.md)

@@ -1,47 +1,55 @@
-# 📋 Changelog — PCperso
+# PCperso — Journal des modifications
 
-Toutes les évolutions notables du guide **PCperso** sont documentées dans ce fichier.  
-Le format s'appuie sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/) et suit le [Gestionnaire de Versions Sémantique](https://semver.org/lang/fr/).
-
----
-
-## [1.2.0] - 2026-11-18
-
-### ✨ Ajouts
-* **Nouveau Chapitre 08 — Refroidissement, Airflow & Entretien** ([`guide/08-refroidissement-et-entretien.md`](./guide/08-refroidissement-et-entretien.md)) :
-  * Comparatif détaillé **Ventirad vs Watercooling AIO** et règles de placement de la pompe/radiateur.
-  * Explication complète du flux d'air (*Airflow*), schéma visuel, ventilateurs *Reverse Blade* et gestion de la pression positive contre la poussière.
-  * Guide d'application et de renouvellement de la **pâte thermique**.
-  * Création de courbes de ventilation silencieuses (**PWM** / **FanControl**) avec réglage de l'hystérésis et tableau des températures normales.
-  * Calendrier d'entretien complet (filtres, air sec, règles de sécurité anti-électricité statique).
-* **Nouvel outil — Configurations Types par Budget** ([`outils/configs-types.md`](./outils/configs-types.md)) :
-  * 4 profils équilibrés (*1080p Essentielle*, *1440p Sweet Spot*, *4K Haut de Gamme* et *Sans Compromis*) basés sur les architectures récentes.
-  * Règle de répartition du budget, choix de l'écran adapté et checklist express pré-achat.
-
-### 🔄 Modifications
-* **Refonte du `README.md` pour la v1.2** :
-  * Ajout d'un encart `[!NOTE]` mettant en avant les nouveautés de la version.
-  * Nettoyage de l'en-tête et ajout d'un *Parcours Express* en 3 étapes.
-  * Intégration du Chapitre 08 et de l'outil *Configs Types* dans les tableaux principaux.
-* **Actualisation des standards matériels** mentionnés dans le guide : intégration des normes **ATX 3.1 / `12V-2x6`**, du **PCIe 5.0** et des cartes mères à connecteurs inversés (**BTF / Project Zero**).
+Les changements notables apportés au projet sont consignés ici. La version **v2.1 Candidate** est en cours de consolidation documentaire ; elle ne doit pas être présentée comme une version stable tant que sa revue n’est pas terminée.
 
 ---
 
-## [1.1.0] - 2026-XX-XX
+## [v2.1 Candidate] — 2026-11-26
 
-### ✨ Ajouts
-* **Nouveau Chapitre 07 — Glossaire Hardware** ([`guide/07-glossaire-hardware.md`](./guide/07-glossaire-hardware.md)) : traduction et explication claire de tous les acronymes techniques (`TDP`, `VRM`, `POST`, `UEFI`, `XMP`, `EXPO`, etc.).
+### Modifié
+- Refonte du README principal : parcours de lecture, tableaux d’accès, badges cohérents et diagrammes Mermaid.
+- Mise à jour des index de guides, outils et scripts pour les aligner sur les chemins observés dans le dépôt.
+- Clarification des avertissements de compatibilité, sécurité matérielle et audit des scripts.
+- Actualisation des documents de suivi afin de distinguer éléments présents et travaux restant à valider.
 
-### 🔄 Modifications
-* Mise à jour du `README.md` avec intégration du Chapitre 07 et amélioration de la mise en page des badges et liens rapides.
+### À vérifier avant toute annonce stable
+- [ ] Relire les recommandations techniques et les exemples de compatibilité par rapport aux références actuelles.
+- [ ] Vérifier manuellement les liens internes et les rendus Mermaid sur GitHub.
+- [ ] Examiner le script PowerShell et les scripts de gestion GitHub avant de recommander leur exécution.
+- [ ] Valider les évolutions candidates sur les fichiers et leurs changements réels.
 
 ---
 
-## [1.0.0] - 2026-XX-XX
+## [v2.0 Stable] — 2026-11-19
 
-### 🎉 Version initiale
-* Publication complète des **Chapitres 01 à 06** *(Composants & Compatibilité, Connecteurs & Préparation, Assemblage & Câblage, BIOS/UEFI, Windows/Pilotes/Tests, Diagnostic & Dépannage)*.
-* Ajout de la **Checklist interactive de montage** ([`CHECKLIST.md`](./CHECKLIST.md)).
-* Ajout du dossier **`outils/`** : Calculateur Budget & PSU, modèle `.csv` et Fiche Mémo Câblage & Debug 1 page.
-* Ajout du script PowerShell **`scripts/pack-logiciels-pc-neuf.ps1`** (`Winget` pour HWiNFO64, OCCT, CrystalDiskInfo, FanControl et 7-Zip).
-* Mise en place des modèles d'Issues GitHub, du guide de contribution (`CONTRIBUTING.md`) et de la licence **CC BY-NC-SA 4.0**.
+### Consolidé
+- Guide structuré en huit chapitres, dont refroidissement et entretien.
+- Checklist de montage, outils de budget, fiches mémo et configurations types.
+- Documentation de scripts et modèles de contribution GitHub.
+- README avec navigation, schémas Mermaid et consignes de sécurité.
+
+---
+
+## [v1.2.0] — 2026-11-18
+
+### Ajouté
+- Chapitre sur le refroidissement, le flux d’air et l’entretien.
+- Configurations types par budget et usage.
+
+### Modifié
+- Actualisation de la navigation du README et des références matérielles.
+
+---
+
+## [v1.1.0]
+
+### Ajouté
+- Glossaire matériel et premières améliorations de navigation du guide.
+
+---
+
+## [v1.0.0]
+
+### Première édition
+- Chapitres de composants, préparation, assemblage, BIOS/UEFI, système et diagnostic.
+- Checklist de montage, outils pratiques et index de scripts.

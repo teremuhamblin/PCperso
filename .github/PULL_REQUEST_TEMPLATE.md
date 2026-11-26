@@ -1,18 +1,32 @@
-<!--
-Astuce : Tu peux choisir un modèle spécialisé en passant dans l'onglet "Preview" puis en cliquant sur un lien ci-dessous :
--->
-> **Modèles spécialisés disponibles (via l'onglet *Preview*) :**
-> [📚 Documentation](?expand=1&template=documentation.md) • [🧩 Composant & Compatibilité](?expand=1&template=composant_compatibilite.md) • [✨ Feature / Bugfix](?expand=1&template=feature_fix.md)
+## 📝 Résumé
 
----
-
-## 📝 Description
-<!-- Décris brièvement le but de cette Pull Request. -->
-
+Décris le changement, le besoin auquel il répond et son périmètre.
 
 ## 🔗 Issue liée
-- Closes #
 
-## ✅ Check-list rapide
-- [ ] Modifications relues et testées / vérifiées.
-- [ ] Aucun lien cassé dans les fichiers Markdown.
+Closes #
+
+## 🧭 Type de changement
+
+- [ ] Documentation / liens
+- [ ] Mise à jour technique sourcée
+- [ ] Outil ou script
+- [ ] Correction
+- [ ] Autre :
+
+## ✅ Vérifications
+
+- [ ] Liens relatifs modifiés vérifiés
+- [ ] Markdown et Mermaid relus sur GitHub
+- [ ] Sources officielles ajoutées pour les nouveaux faits techniques
+- [ ] Les consignes de sécurité sont exactes et visibles
+- [ ] Les scripts modifiés ont été relus ; effets et privilèges documentés
+- [ ] Aucun secret, token ou donnée personnelle ajouté
+
+## 🧪 Validation
+
+Décris les contrôles effectués. Si aucun test n’était pertinent, explique pourquoi.
+
+## 📷 Captures (si utile)
+
+Ajoute des captures pour les changements visuels ou les schémas.

@@ -1,29 +1,12 @@
-###### `README.md` >> markdown 
+# PCperso — Ressources visuelles
 
-```text
-Très simple et court, prêt à être placé dans ton dossier `assets/`.
-```
+Ce dossier contient les visuels référencés par le dépôt.
 
-# Assets – PCperso
+| Fichier | Utilisation |
+|:--|:--|
+| [`logo.svg`](./logo.svg) | Logo PCperso utilisé dans l’en-tête du README. |
+| [`banner.svg`](./banner.svg) | Bannière du README principal. |
 
-Ce dossier centralise l'ensemble des ressources visuelles et multimédias du projet **PCperso**.
+Les ressources sont des SVG statiques. GitHub utilise sa propre police et ses propres thèmes pour le Markdown ; le README s’appuie donc sur la bannière, les images, la hiérarchie des titres, les badges et Mermaid plutôt que sur du CSS ou des scripts externes.
 
-## Fichiers disponibles
-
-* **`logo.svg`** : Logo principal du projet *(`512×512`)*.
-
-* **`banner.svg`** : Bannière d'en-tête du projet *(`1200×300`)*.
-
-## Ressources à venir
-
-Ce dossier accueillera également les futurs médias du projet :
-
-* **Images** (photos de montage, schémas, captures d'écran)
-
-* **Vidéos** (tutoriels, démonstrations)
-
-* **Bannières** additionnelles
-
-* **Icônes et badges**
-
-* Tout autre fichier multimédia lié à **PCperso**
+Toute nouvelle image devrait avoir un texte alternatif descriptif, rester lisible sur mobile et être stockée dans ce dépôt. Vérifie sa licence et sa provenance avant ajout.

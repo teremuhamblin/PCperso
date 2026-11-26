@@ -1,18 +1,30 @@
-# 🤝 Contribuer à PCperso
+# Contribuer à PCperso
 
-Merci de ton intérêt pour **PCperso** ! Ce guide a pour objectif de rester accessible, exact et à jour pour toute personne souhaitant assembler son premier ordinateur.
+Merci de contribuer à un guide de montage accessible, prudent et vérifiable. Les corrections, améliorations de navigation et mises à jour sourcées sont les bienvenues.
 
-## 💡 Comment aider ?
+## Avant d’ouvrir une Pull Request
 
-1. **Corriger une coquille ou clarifier un passage** :
-   - Ouvre une *Pull Request* en expliquant brièvement la modification.
-   - Privilégie un vocabulaire simple : si un terme technique est utilisé, assure-toi qu'il figure dans [`guide/07-glossaire-hardware.md`](./guide/07-glossaire-hardware.md).
-2. **Signaler un matériel obsolète ou une nouvelle norme** :
-   - Ouvre une *Issue* (ex. : nouveaux sockets CPU, évolutions de connecteurs d'alimentation, changements de logiciels).
-3. **Proposer un schéma pour `assets/`** :
-   - Utilise de préférence des formats légers et nets (`.svg` ou `.png` compressés), sans texte illisible sur mobile.
+1. Consulte les issues existantes ou ouvre une issue pour discuter d’une évolution importante.
+2. Indique les fichiers concernés et le problème que tu résous.
+3. Pour une recommandation technique, ajoute une source officielle, une date de vérification et le contexte matériel concerné.
+4. Garde les modifications ciblées et vérifie les liens Markdown que tu changes.
+5. N’ajoute pas de prix ou de compatibilité pérenne sans préciser qu’ils doivent être vérifiés à nouveau.
 
-## ✅ Règles éditoriales
-- **Bienveillance & pédagogie** : Aucun jugement sur le budget ou le niveau technique du lecteur.
-- **Sécurité avant tout** : Toujours rappeler de couper l'alimentation avant toute manipulation interne.
-- **Liens propres** : Éviter les liens commerciaux affiliés ou les recommandations sponsorisées.
+## Sécurité et scripts
+
+- Les instructions ne remplacent pas les manuels des fabricants ni l’assistance qualifiée.
+- Toute modification aux consignes d’alimentation, BIOS ou connectique doit être relue avec une attention particulière.
+- Lis entièrement les scripts modifiés et documente leurs effets, sources et prérequis.
+- Ne place pas de secrets, données personnelles ou tokens dans les commits, issues ou logs.
+- Les scripts d’administration GitHub peuvent créer ou modifier des ressources distantes : vérifie le dépôt cible et l’état initial.
+
+## Checklist de Pull Request
+
+- [ ] Le but et le périmètre sont décrits.
+- [ ] Les faits techniques nouveaux sont référencés et datés.
+- [ ] Les liens relatifs modifiés ont été vérifiés.
+- [ ] Les consignes de sécurité restent visibles et prudentes.
+- [ ] Les scripts sont documentés et leurs changements expliqués.
+- [ ] Le rendu Markdown/Mermaid a été relu sur GitHub.
+
+Merci de rester bienveillant et de privilégier la clarté à la quantité.

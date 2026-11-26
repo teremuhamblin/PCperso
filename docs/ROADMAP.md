@@ -1,41 +1,30 @@
-# Roadmap – PCperso
+# PCperso — Feuille de route
 
-Feuille de route des évolutions du projet **PCperso**, de l'initialisation (v1.0) à la refonte majeure (v2.0).
+La feuille de route distingue les ressources déjà présentes dans le dépôt des validations ou évolutions encore à faire. Une case n’est cochée que lorsque le travail correspondant est vérifiable dans le dépôt.
 
----
+## ✅ Base documentaire disponible
 
-## v1.0 – Fondation & Documentation initiale
-- [x] Mise en place de la structure du projet (`structure.md`, `architecture.md`).
-- [x] Rédaction du guide général sur l'assemblage d'un PC Gamer.
-- [x] Création des premières configurations types (Entrée, Milieu et Haut de gamme).
+- [x] Guide principal organisé en huit chapitres (`guide/01` à `guide/08`).
+- [x] Checklist de montage à la racine (`CHECKLIST.md`).
+- [x] Index d’outils, configurations types, fiche mémo et guide d’upgrade.
+- [x] Index de scripts et script PowerShell pour les logiciels de post-installation.
+- [x] Documentation de suivi dans `docs/` et ressources de contribution dans `.github/`.
+- [x] README v2.1 Candidate avec navigation et diagrammes Mermaid.
 
-## v1.1 – Composants & Compatibilité de base
-- [ ] Ajout des fiches détaillées par composant (CPU, GPU, Carte mère, RAM, Alimentation, Boîtier).
-- [ ] Intégration des règles de compatibilité essentielles (Socket, DDR4/DDR5, format ATX/mATX).
-- [ ] Amélioration et simplification des explications du guide de montage.
+## 🔎 Cycle v2.1 Candidate — Qualité et cohérence
 
-## v1.2 – Budget & Estimation électrique
-- [ ] Ajout du calcul de budget total par configuration.
-- [ ] Estimation de la consommation (TDP) et dimensionnement de l'alimentation (PSU).
-- [ ] Recommandations ciblées par résolution (1080p, 1440p, 4K).
+- [ ] Relire les recommandations matérielles contre les documentations officielles des fabricants.
+- [ ] Examiner les scripts et confirmer que leur documentation reflète précisément leur comportement actuel.
+- [ ] Vérifier les liens internes du dépôt et corriger les références historiques restantes.
+- [ ] Revoir les instructions de sécurité et faire valider les conseils sensibles avant diffusion.
+- [ ] Tester le rendu du README et des diagrammes Mermaid sur GitHub desktop et mobile.
+- [ ] Mettre à jour les notes de version après revue effective des changements.
 
-## v1.3 – Refroidissement, Dimensions & Stockage
-- [ ] Vérification des contraintes physiques (longueur GPU, hauteur ventirad, flux d'air du boîtier).
-- [ ] Ajout des recommandations stockage (SSD NVMe) et refroidissement (Ventirad / Watercooling AIO).
-- [ ] Section dédiée aux périphériques essentiels (écran, clavier, souris).
+## 🚀 Prochaines pistes — à définir
 
-## v1.4 – Post-montage, BIOS & Dépannage
-- [ ] Guide de premier démarrage (réglages BIOS/UEFI, activation XMP/EXPO, pilotes).
-- [ ] Fiche de dépannage rapide (voyants LED carte mère, absence d'affichage, tests de stabilité).
-- [ ] Mise à jour de la documentation d'architecture.
+Ces pistes ne sont pas des fonctionnalités déjà livrées. Elles nécessitent une proposition, une revue de faisabilité et des sources fiables avant d’être planifiées.
 
-## v1.5 – Comparateur & Export
-- [ ] Comparaison côte à côte de plusieurs configurations PC.
-- [ ] Export des configurations (Markdown / PDF / JSON).
-- [ ] Nettoyage et optimisation du projet en préparation de la v2.0.
-
-## v2.0 – Refonte majeure & Expérience interactive
-- [ ] Refonte complète de l'architecture technique de **PCperso**.
-- [ ] Configurateur interactif avec vérification de compatibilité en temps réel.
-- [ ] Suivi d'évolutivité (suggestions d'upgrades futurs pour un PC déjà monté).
-- [ ] Documentation finale unifiée et mise à jour complète des guides.
+- [ ] Définir un format de données maintenable pour les configurations types et leur date de vérification.
+- [ ] Ajouter des références fabricant versionnées aux tableaux de compatibilité.
+- [ ] Évaluer des contrôles automatisés de liens et de cohérence Markdown en CI.
+- [ ] Décider du périmètre et du statut de la future version stable après clôture de la Candidate.
