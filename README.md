@@ -11,6 +11,8 @@
 
 Documentation du dépôt, organisée par thème.
 
+</div>
+
 ## Pilotage du projet
 
 - [Changelog](CHANGELOG.md) — changements documentés.
