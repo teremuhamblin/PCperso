@@ -1,55 +1,44 @@
-# PCperso — Journal des modifications
+# PCperso — Changelog
 
-Les changements notables apportés au projet sont consignés ici. La version **v2.1 Candidate** est en cours de consolidation documentaire ; elle ne doit pas être présentée comme une version stable tant que sa revue n’est pas terminée.
-
----
-
-## [v2.1 Candidate] — 2026-11-26
-
-### Modifié
-- Refonte du README principal : parcours de lecture, tableaux d’accès, badges cohérents et diagrammes Mermaid.
-- Mise à jour des index de guides, outils et scripts pour les aligner sur les chemins observés dans le dépôt.
-- Clarification des avertissements de compatibilité, sécurité matérielle et audit des scripts.
-- Actualisation des documents de suivi afin de distinguer éléments présents et travaux restant à valider.
-
-### À vérifier avant toute annonce stable
-- [ ] Relire les recommandations techniques et les exemples de compatibilité par rapport aux références actuelles.
-- [ ] Vérifier manuellement les liens internes et les rendus Mermaid sur GitHub.
-- [ ] Examiner le script PowerShell et les scripts de gestion GitHub avant de recommander leur exécution.
-- [ ] Valider les évolutions candidates sur les fichiers et leurs changements réels.
+Les entrées décrivent les changements réellement documentés dans le dépôt. Les recommandations matérielles restent à vérifier selon les références et les dates indiquées dans les guides.
 
 ---
 
-## [v2.0 Stable] — 2026-11-19
-
-### Consolidé
-- Guide structuré en huit chapitres, dont refroidissement et entretien.
-- Checklist de montage, outils de budget, fiches mémo et configurations types.
-- Documentation de scripts et modèles de contribution GitHub.
-- README avec navigation, schémas Mermaid et consignes de sécurité.
-
----
-
-## [v1.2.0] — 2026-11-18
+## [v2.2.0 — préparation Candidate] — 2026-11-26
 
 ### Ajouté
-- Chapitre sur le refroidissement, le flux d’air et l’entretien.
-- Configurations types par budget et usage.
+- Script Python autonome de vérification des liens locaux Markdown.
+- Workflow GitHub Actions pour lancer ce contrôle sur les pushes et Pull Requests.
+- Documents de préparation de release, issue et milestone pour la revue v2.2.
 
 ### Modifié
-- Actualisation de la navigation du README et des références matérielles.
+- Mise à jour du README et des index pour clarifier le statut Candidate, les sources et les avertissements.
+- Roadmap et suivi de tâches recentrés sur la traçabilité, la sécurité et la qualité éditoriale.
+- Modèles de contribution et de Pull Request enrichis avec une checklist de validation.
+
+### À ne pas confondre
+- La v2.2 Stable **n’est pas déclarée publiée** par ces changements.
+- Aucun audit matériel, test externe ou revue indépendante n’est revendiqué ici.
 
 ---
+
+## [v2.1 Candidate] — consolidation documentaire
+
+- Harmonisation des pages principales, index et liens du dépôt.
+- Clarification du statut Candidate et des vérifications restant à faire.
+
+## [v2.0 Stable]
+
+- Consolidation du guide en huit chapitres, checklist, outils et ressources communautaires.
+
+## [v1.2.0]
+
+- Chapitre refroidissement/entretien et configurations types.
 
 ## [v1.1.0]
 
-### Ajouté
-- Glossaire matériel et premières améliorations de navigation du guide.
-
----
+- Glossaire matériel et amélioration de navigation.
 
 ## [v1.0.0]
 
-### Première édition
-- Chapitres de composants, préparation, assemblage, BIOS/UEFI, système et diagnostic.
-- Checklist de montage, outils pratiques et index de scripts.
+- Guide initial, checklist, outils de base et script de post-installation.
